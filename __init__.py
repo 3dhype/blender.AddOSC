@@ -488,7 +488,7 @@ class OSC_Reading_Sending(bpy.types.Operator):
 #  MAIN GUI PANEL                     #
 #######################################
 
-class OSC_UI_Panel(bpy.types.Panel):
+class OSC_UI_PT_Panel(bpy.types.Panel):
     bl_category = "AddOSC"
     bl_label = "AddOSC Settings"
     bl_space_type = "VIEW_3D"
@@ -516,7 +516,7 @@ class OSC_UI_Panel(bpy.types.Panel):
 #  OPERATIONS GUI PANEL               #
 #######################################
 
-class OSC_UI_Panel2(bpy.types.Panel):
+class OSC_UI_PT_Panel2(bpy.types.Panel):
     bl_category = "AddOSC"
     bl_label = "AddOSC Operations"
     bl_space_type = "VIEW_3D"
@@ -789,8 +789,8 @@ classes = (
     OSC_Export,
     OSC_Import,
     OSC_Reading_Sending,
-    OSC_UI_Panel,
-    OSC_UI_Panel2,
+    OSC_UI_PT_Panel,
+    OSC_UI_PT_Panel2,
     StartUDP,
     StopUDP,
     PickOSCaddress,
